@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cinzel', serif;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 93.8vh;
+  background-color: #091E26;  
+}
+
+
+li {
+  list-style-type: none;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  background-color: #5D14A6;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-info {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.history-button {
+  background: linear-gradient(180deg, #5D14A6 0%, #400E73 100%);
+  border-radius: 8px;
+  width: 160px;
+  height: 40px;
+  font-size: 12px;
+  border: 1.5px solid #000;
+}
+
+.next-player {
+  color: #03A639;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.win {
+  font-size: 25px;
+  color: #03A639;
+  font-weight: bold;
+  transition: all 1s;
+}
